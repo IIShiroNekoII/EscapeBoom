@@ -38,37 +38,9 @@ public class Door : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        _timeCount -= Time.deltaTime;
+       _timeCount -= Time.deltaTime;
 
         if (_timeCount < 0)
         {
@@ -97,5 +69,5 @@ public class Door : MonoBehaviour
              
 
         }
-    }
+    }*/
 }
