@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class timer : MonoBehaviour
 {
-    public float timeRemaining = 300;
+    public float timeRemaining;
     public TMP_Text timerText;
     void Update()
     {
@@ -14,6 +14,7 @@ public class timer : MonoBehaviour
         {
             timeRemaining -= Time.deltaTime;
         }
+
         else
         {
             timeRemaining = 0;
@@ -22,11 +23,17 @@ public class timer : MonoBehaviour
         DisplayTime(timeRemaining);
     }
 
+
     void DisplayTime (float timeToDisplay)
     {
         if(timeToDisplay < 0)
         {
             timeToDisplay = 0;
+        }
+
+        if (timeToDisplay < 60)
+        {
+            timerText.color = Color.red;
         }
 
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);
