@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Door : MonoBehaviour
 {
+    [SerializeField]
+    private Transform _pivot;
     [SerializeField]
     private float _speed;
 
@@ -28,11 +31,16 @@ public class Door : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void OnSocketSelect(SelectEnterEventArgs args)
     {
-        if(other.gameObject.tag == "key1")
+        if(args.interactableObject.transform.tag == "key1" && _doorStatus == false)
         {
-
+            _pivot.Rotate(0, _pivot.rotation.y - 90, 0);
+            Debug.Log("porte open");
+        }
+        else
+        {
+            Debug.Log("Rien ne se passe");
         }
     }
 
@@ -41,61 +49,5 @@ public class Door : MonoBehaviour
     void Update()
     {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        _timeCount -= Time.deltaTime;
-
-        if (_timeCount < 0)
-        {
-            if (_direction)
-            {
-                _direction = false;
-                _timeCount = _maxTimeCount;
-                transform.parent.Rotate(0, this.transform.rotation.y + 90, 0);
-            }
-            else
-            {
-                transform.parent.Rotate(0, this.transform.rotation.y - 90, 0);
-                _direction = true;
-                _timeCount = _maxTimeCount;
-                
-            }
-        }
-
-        if (_canMove)
-        {
-    
-               
-
-
-
-             
-
-        }
     }
 }
