@@ -15,6 +15,8 @@ public class digicode : MonoBehaviour
     public AudioSource digicode_source;
     public AudioSource door_source;
     public AudioSource Wdigicode_source;
+    private bool doorStatus;
+    private bool digicodeStatus;
 
     [SerializeField]
     private Transform _pivot;
@@ -22,6 +24,8 @@ public class digicode : MonoBehaviour
     {
         nmb_btn_click = 0;
         nmb_input = mdp.Length;
+        doorStatus = false;
+        digicodeStatus = false;
     }
 
     // Update is called once per frame
@@ -33,16 +37,23 @@ public class digicode : MonoBehaviour
             {
                 input = "";
                 nmb_btn_click = 0;
-                //son bon code
-                digicode_source.clip = digicode_correct;
-                digicode_source.Play();
+                if (digicodeStatus == false)
+                {
+                    digicodeStatus = true;
+                    //son bon code
+                    digicode_source.clip = digicode_correct;
+                    digicode_source.Play();
+                }
 
+                //Debug.Log("c'est bon");
                 //lancement anim porte
-                Debug.Log("c'est bon");
-
-                _pivot.Rotate(0, _pivot.rotation.y - 90, 0);
-                door_source.clip = openDoor;
-                door_source.Play();
+                if (doorStatus == false)
+                {
+                    doorStatus = true;
+                    _pivot.Rotate(0, _pivot.rotation.y - 90, 0);
+                    door_source.clip = openDoor;
+                    door_source.Play();
+                }
             }
 
             else

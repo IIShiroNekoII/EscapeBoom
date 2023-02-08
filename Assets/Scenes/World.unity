@@ -363,6 +363,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &52142654 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7114529290702431865, guid: fb27f6ed273fd1a41a1ed10be86693a3, type: 3}
+  m_PrefabInstance: {fileID: 968787950}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &67247559
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,6 +791,7 @@ MonoBehaviour:
   digicode_source: {fileID: 2034351310}
   door_source: {fileID: 597791356}
   Wdigicode_source: {fileID: 1980663137}
+  _pivot: {fileID: 52142654}
 --- !u!1 &106566228
 GameObject:
   m_ObjectHideFlags: 0
@@ -2632,6 +2638,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2242667679502754847, guid: fb27f6ed273fd1a41a1ed10be86693a3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 05b86cfad7c2760498347a2facb79e85, type: 2}
+    - target: {fileID: 2408686002047559203, guid: fb27f6ed273fd1a41a1ed10be86693a3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8cc49487e131ba242a6d354746ddbd5e, type: 2}
     - target: {fileID: 4447934676366913897, guid: fb27f6ed273fd1a41a1ed10be86693a3, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -2744,7 +2758,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: door2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5546538377100023027, guid: fb27f6ed273fd1a41a1ed10be86693a3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fb27f6ed273fd1a41a1ed10be86693a3, type: 3}
 --- !u!1001 &1002611207
 PrefabInstance:
