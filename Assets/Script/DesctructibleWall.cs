@@ -17,6 +17,9 @@ public class DesctructibleWall : MonoBehaviour
     [SerializeField]
     public GameObject _botBomb;
 
+    public AudioClip boom;
+    public AudioSource boom_source;
+
     // t_completeBomb[0] = TopBomb
     // t_completeBomb[1] = MidBomb
     // t_completeBomb[2] = BotBomb
@@ -62,7 +65,8 @@ public class DesctructibleWall : MonoBehaviour
 
         if (t_completeBomb[0] == 1 && t_completeBomb[1] == 1 && t_completeBomb[2] == 1)
         {
-            
+            boom_source.clip = boom;
+            boom_source.Play();
             Destroy(gameObject);
         }
     }

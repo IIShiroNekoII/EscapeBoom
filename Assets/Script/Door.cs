@@ -10,6 +10,10 @@ public class Door : MonoBehaviour
     [SerializeField]
     private float _speed;
 
+    public AudioClip openDoor;
+    public AudioSource door_source;
+
+
 
     // True : Direction open
     // False : Direction close
@@ -28,6 +32,8 @@ public class Door : MonoBehaviour
         {
             _pivot.Rotate(0, _pivot.rotation.y - 90, 0);
             _doorStatus = true;
+            door_source.clip = openDoor;
+            door_source.Play();
             Debug.Log("porte open");
         }
         else
