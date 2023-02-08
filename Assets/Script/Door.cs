@@ -27,6 +27,7 @@ public class Door : MonoBehaviour
         if(args.interactableObject.transform.tag == "key1" && _doorStatus == false)
         {
             _pivot.Rotate(0, _pivot.rotation.y - 90, 0);
+            _doorStatus = true;
             Debug.Log("porte open");
         }
         else
