@@ -63,9 +63,13 @@ public class digicode : MonoBehaviour
                 input = "";
                 nmb_btn_click = 0;
                 //son mauvais code
-                Wdigicode_source.clip = beep_wrong;
-                Wdigicode_source.Play();
-                Debug.Log("c'est pas bon");
+                if (digicodeStatus == false)
+                {
+                    Wdigicode_source.clip = beep_wrong;
+                    Wdigicode_source.Play();
+                    Debug.Log("c'est pas bon");
+                }
+                
                 
             }
         }

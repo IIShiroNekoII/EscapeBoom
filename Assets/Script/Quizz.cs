@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Quizz : MonoBehaviour
 {
-    public void rouge()
+     public void rouge()
     {
         SceneManager.LoadScene(2);
     }

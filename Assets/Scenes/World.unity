@@ -3102,6 +3102,7 @@ GameObject:
   - component: {fileID: 819798392}
   - component: {fileID: 819798391}
   - component: {fileID: 819798390}
+  - component: {fileID: 819798394}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -3214,6 +3215,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &819798394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819798388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3809ce112afa3da4086ea6a6f3614316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &849660621
 GameObject:
   m_ObjectHideFlags: 0
@@ -6891,7 +6904,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1643986053}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 819798394}
+        m_TargetAssemblyTypeName: Quizz, Assembly-CSharp
+        m_MethodName: bleu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1643986053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7013,7 +7038,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1691054603}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 819798394}
+        m_TargetAssemblyTypeName: Quizz, Assembly-CSharp
+        m_MethodName: rouge
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1691054603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7404,7 +7441,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1855672839}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 819798394}
+        m_TargetAssemblyTypeName: Quizz, Assembly-CSharp
+        m_MethodName: vert
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1855672839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8720,7 +8769,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2127647478}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 819798394}
+        m_TargetAssemblyTypeName: Quizz, Assembly-CSharp
+        m_MethodName: jaune
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2127647478
 MonoBehaviour:
   m_ObjectHideFlags: 0
