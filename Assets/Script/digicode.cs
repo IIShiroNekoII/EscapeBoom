@@ -15,6 +15,9 @@ public class digicode : MonoBehaviour
     public AudioSource digicode_source;
     public AudioSource door_source;
     public AudioSource Wdigicode_source;
+
+    [SerializeField]
+    private Transform _pivot;
     void Start()
     {
         nmb_btn_click = 0;
@@ -36,6 +39,8 @@ public class digicode : MonoBehaviour
 
                 //lancement anim porte
                 Debug.Log("c'est bon");
+
+                _pivot.Rotate(0, _pivot.rotation.y - 90, 0);
                 door_source.clip = openDoor;
                 door_source.Play();
             }
