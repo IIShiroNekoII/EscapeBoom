@@ -6321,6 +6321,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1340047146}
+  - component: {fileID: 1340047147}
   m_Layer: 0
   m_Name: Camera Offset
   m_TagString: Untagged
@@ -6346,6 +6347,19 @@ Transform:
   m_Father: {fileID: 1961243966}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1340047147
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340047145}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6737514, y: 0.706329, z: 0.61017245}
+  m_Center: {x: 0.015275911, y: 0.01764184, z: -0.016958298}
 --- !u!1 &1358321032
 GameObject:
   m_ObjectHideFlags: 0
@@ -8231,15 +8245,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1961243963}
-  m_LocalRotation: {x: 0.033935938, y: 0.71102214, z: -0.0203101, w: 0.7020566}
-  m_LocalPosition: {x: -6.8032475, y: 0.88668895, z: -0.05098438}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -6.82, y: 0.38, z: -0.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1340047146}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 4.389, y: 90.771, z: 1.134}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1964024132
 GameObject:
   m_ObjectHideFlags: 0
