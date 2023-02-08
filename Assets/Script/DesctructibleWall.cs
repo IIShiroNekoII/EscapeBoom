@@ -62,6 +62,7 @@ public class DesctructibleWall : MonoBehaviour
 
         if (t_completeBomb[0] == 1 && t_completeBomb[1] == 1 && t_completeBomb[2] == 1)
         {
+            
             Destroy(gameObject);
         }
     }
