@@ -10,5 +10,5 @@ Sources :
 Musiques et bruits ambiants : https://lasonotheque.org/
 timer : https://www.youtube.com/watch?v=HmHPJL-OcQE&t=44s
 Requin sur le mur : création personnelle de Pierrick
-Reveil : alarm clock by Adam Krhanek
+Reveil : alarm clock by Adam Krhanek Blenderkit
 Enigme finale : Père Fouras de Fort Boyard
