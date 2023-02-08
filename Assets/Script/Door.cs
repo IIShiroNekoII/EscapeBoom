@@ -16,15 +16,6 @@ public class Door : MonoBehaviour
     [SerializeField]
     bool _doorStatus;
 
-    [SerializeField]
-    bool _canMove;
-
-    [SerializeField]
-    bool _canDisappear;
-
-    float _timeCount;
-
-
     // Start is called before the first frame update
     void Start()
     {
